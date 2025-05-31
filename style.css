@@ -1,0 +1,61 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(to bottom right, #0f0f0f, #1a1a1a);
+    color: #fff;
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    min-height: 100vh;
+}
+
+#gameCanvas {
+    border: 3px solid #0ff;
+    border-radius: 12px;
+    box-shadow: 0 0 25px #0ff, 0 0 50px rgba(0, 255, 255, 0.3);
+    margin-top: 20px;
+}
+
+.score-container {
+    display: flex;
+    gap: 50px;
+    margin: 20px;
+    font-size: 36px;
+    padding: 1rem 2rem;
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 12px;
+    box-shadow: 0 0 10px #555;
+}
+
+#gameOver {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #222;
+    padding: 30px 50px;
+    border-radius: 15px;
+    text-align: center;
+    border: 2px solid #555;
+    box-shadow: 0 0 25px #ff0040;
+    color: #fff;
+}
+
+button {
+    background: linear-gradient(135deg, #00c6ff, #0072ff);
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 18px;
+    margin-top: 10px;
+    box-shadow: 0 0 12px #00f0ff;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background: linear-gradient(135deg, #ff0080, #ff6ec4);
+    box-shadow: 0 0 20px #ff66c4;
+}
